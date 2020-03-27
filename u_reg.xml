@@ -1,0 +1,18 @@
+<info>
+	<usertype class="parents">
+		<uname>Tasvir</uname>
+		<pass>1111</pass>
+	</usertype>
+	<usertype class="admin">
+		<uname>Sabique</uname>
+		<pass>2222</pass>
+	</usertype>
+	<usertype class="admin">
+		<uname>Alvee</uname>
+		<pass>4444</pass>
+	</usertype>
+	<usertype class="tutors">
+		<uname>Sajid</uname>
+		<pass>3333</pass>
+	</usertype>
+</info>
