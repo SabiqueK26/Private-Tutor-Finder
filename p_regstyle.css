@@ -1,0 +1,92 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #000000;
+	background-position: center;
+}
+.signup-p
+{
+	width: 430px;
+	height: 650px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	padding: 40px;
+	background-color: #191919;
+}
+.signup-p p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	float: left;
+}
+.head_txt 
+{
+	margin: 0;
+	padding: 0 0 20px;
+	background: #ADFF2F;
+	position: auto;
+}
+.head_txt h1
+{
+	font-family: times new roman header;
+	color: black;
+	text-align: left;
+	font-size: 50px;
+}
+h3
+{
+	float: left;
+	font-size: 18px;
+	font-size: 25;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+.signup-p input[type="text"]
+{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	color: white;
+	font-size: 16px;
+	float: left;
+}
+.signup-p input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	outline: none;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	color: white;
+	font-size: 16px;
+	float: left;
+}
+.signup-p input[type="submit"]
+{
+	float: center;
+	border: none;
+	outline: none;
+	height: 40px;
+	background: cyan;
+	color: darkblue;
+	font-size: 18px;
+	cursor: pointer;
+}
+.signup-p input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: teal;
+	color: black;
+}
