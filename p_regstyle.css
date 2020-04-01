@@ -75,7 +75,7 @@ h3
 }
 .signup-p input[type="submit"]
 {
-	float: center;
+	position: center;
 	border: none;
 	outline: none;
 	height: 40px;

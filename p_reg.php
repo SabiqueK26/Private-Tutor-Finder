@@ -115,25 +115,25 @@
 
 				<p>
 					Gender:
+					<span><input type="radio" name="gender" value="Male"> Male <input type="radio" name="gender" value="Female"> Female</span>
 					<span style="color:red"><?php echo $err_gender;?><span>
-					<span><input type="radio" name="gender" style="color:white" value="Male"> Male <input type="radio" name="gender" style="color:white" value="Female"> Female</span>
 				</p>
 				
 				<p>
 					Address:
-					<span><input class="textbox" type="text" name="padd" placeholder="Enter address" value="<?php echo $padd;?>"></span>
+					<input class="textbox" type="text" name="padd" placeholder="Enter address" value="<?php echo $padd;?>">
 					<span style="color:red"><?php echo $err_padd;?></span>
 				</p>	
 				
 				<p>
 					Profession:
-					<span><input class="textbox" type="text" placeholder="Enter Profession" name="prof" value="<?php echo $prof;?>"></span>
+					<input class="textbox" type="text" placeholder="Enter Profession" name="prof" value="<?php echo $prof;?>">
 					<span style="color:red"><?php echo $err_prof;?></span>
 				</p>
 				
 				<p>
 					Phone Number:
-					<span><input class="textbox" type="text" placeholder="Enter phone number" name="pnum" value="<?php echo $pnum;?>"></span>
+					<input class="textbox" type="text" placeholder="Enter phone number" name="pnum" value="<?php echo $pnum;?>">
 					<span style="color:red"><?php echo $err_pnum;?></span>
 				</p>
 				
