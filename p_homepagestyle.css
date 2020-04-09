@@ -1,0 +1,125 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #000000;
+	background-position: center;
+}
+.a_homepage
+{
+	width: 1170px;
+	margin: auto;
+}
+.head_txt 
+{
+	margin: 0;
+	padding: 0 0 20px;
+	background: #ADFF2F;
+	position: auto;
+}
+.head_txt h1
+{
+	font-family: times new roman header;
+	color: black;
+	text-align: left;
+	font-size: 50px;
+}
+h3
+{
+	float: left;
+	font-size: 18px;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+.nav-area
+{
+	float: right;
+	list-style: none;
+	margin-top: 40px;
+}
+.nav-area li
+{
+	display: inline-block;
+}
+.nav-area li a
+{
+	color: black;
+	background-color: white;
+	text-decoration: none;
+	padding: 10px 30px;
+	font-family: poppins;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.nav-area li a:hover
+{
+	cursor: pointer;
+	background: #B22222;
+	color: black;
+}
+.cen-area
+{
+	position: absolute;
+	list-style: square;
+	margin: 100px;
+}
+.cen-area li
+{
+	display: inline-block;
+}
+.cen-area li a
+{
+	color: red;
+	background-color: white;
+	font-family: poppins;
+	text-decoration: none;
+	padding: 20px 30px;
+	font-size: 25px;
+	border-radius: 20px;
+}
+.cen-area li a:hover
+{
+	cursor: pointer;
+	background: crimson;
+	color: black;
+}
+.tlist
+{
+	width: 450px;
+	height: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	padding: 40px;
+	background-color: white;
+}
+.tlist table
+{
+	width: 400px;
+}
+.tlist th
+{
+	text-align: left;
+}
+.tlist table, th, td
+{
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+.tlist th, td
+{
+	padding: 10px;
+}
+.tlist caption
+{
+	font-size: 15px;
+	color: crimson;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	padding: 20px;
+}
