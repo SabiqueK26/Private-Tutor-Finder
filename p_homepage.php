@@ -1,5 +1,11 @@
 <?php
 	session_start();
+	if(!isset($_SESSION['UserName']))
+	{
+		header('Location:../views/login.php');
+	}
+	require_once '../controllers/TutorsControllers.php';
+	$tutors = getAllTutors();
 ?>
 <html>
 	<head>
@@ -10,29 +16,38 @@
 	<body>
 		<div class="p_homepage">
 			<form action="" method="post"> 
-			<h3>Welcome <?php echo $_SESSION['loggedinauser']; ?></h3>
+			<h3>Welcome <?php echo $_SESSION['UserName']; ?></h3>
 				<ul class="nav-area">
 					<li><a href="p_editacc.php"><b>Edit Account</b></a></li>
 					<li><a href="p_changepwd.php"><b>Change Password</b></a></li>
-					<li><a href="login.php"><b>Log Out</b></a></li>
+					<li><a href="logout.php"><b>LogOut</b></a></li>
 				</ul>
 			<div class="tlist">	
 				<table>
 					<caption>Tutors List</caption>
-					<tr>
-						<th>Full Name</th>
-						<th>User Name</th>
+					<thead>
+						<th>Name</th>
+						<th>UserName</th>
 						<th>Gender</th>
-						<th>E-mail</th>
-						<th>Interested</th>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
+						<th>Phone</th>
+						<th>Email</th>
+						<th>AcademicInstitution</th>
+					</thead>
+					<tbody>
+						<?php
+							foreach($tutors as $tutor)
+							{
+								echo "<tr>";
+									echo "<td>".$tutor["Name"]."</td>";
+									echo "<td>".$tutor["UserName"]."</td>";
+									echo "<td>".$tutor["Gender"]."</td>";
+									echo "<td>".$tutor["Phone"]."</td>";
+									echo "<td>".$tutor["Email"]."</td>";
+									echo "<td>".$tutor["AcademicInstitution"]."</td>";
+								echo "</tr>";
+							}
+						?>
+					</tbody>
 				</table>
 			</div>
 			</form>

@@ -86,3 +86,40 @@ h3
 	background: crimson;
 	color: black;
 }
+.tlist
+{
+	width: 750px;
+	height: 450px;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	padding: 40px;
+	background-color: white;
+}
+.tlist table
+{
+	width: 400px;
+}
+.tlist th
+{
+	text-align: left;
+}
+.tlist table, th, td
+{
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+.tlist th, td
+{
+	padding: 10px;
+}
+.tlist caption
+{
+	font-size: 15px;
+	color: crimson;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	padding: 20px;
+}

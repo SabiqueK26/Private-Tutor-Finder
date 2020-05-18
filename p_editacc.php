@@ -5,25 +5,26 @@
 		header('Location:../views/login.php');
 	}
 	require_once '../controllers/ParentsControllers.php';
-	$parents = getAllParents();
+	$parents = getParents();
 ?>
-<html>	
+<html>
 	<head>
-		<title>Admin - show all Parents</title>
+		<title>Parents - edit account</title>
 		<h1 class="head_txt"><b>Private Tutor Finder</b></h1>
-		<link rel="stylesheet" type="text/css" href="a_changepwdstyle.css">
+		<link rel="stylesheet" type="text/css" href="p_homepagestyle.css">
 	</head>
 	<body>
-		<div class="a_homepage">
+		<div class="p_homepage">
 			<form action="../controllers/ParentsControllers.php" method="post"> 
 			<h3>Welcome <?php echo $_SESSION['UserName']; ?></h3>
 				<ul class="nav-area">
-					<li><a href="a_homepage.php"><b>Home</b></a></li>
-					<li><a href="deletep.php"><b>DELETE USER</b></a></li>
+					<li><a href="p_homepage.php"><b>Home</b></a></li>
+					<li><a href="logout.php"><b>Log Out</b></a></li>
 				</ul>
-			<div class="plist">	
+			<div class="cen-area">
+				<div class="tlist">	
 				<table>
-					<caption>Parents List</caption>
+					<caption>PROFILE</caption>
 					<thead>
 						<th>Name</th>
 						<th>UserName</th>
@@ -44,12 +45,21 @@
 									echo "<td>".$parent["Phone"]."</td>";
 									echo "<td>".$parent["Address"]."</td>";
 								echo "</tr>";
+								echo "<tr>";
+									echo '<td>Cannot Change</td>';
+									echo '<td>Cannot Change</td>';
+									echo '<td>Cannot Change</td>';
+									echo '<td><a href="p_up_prof.php"><b>Change</b></td>';
+									echo '<td><a href="p_up_pnum.php"><b>Change</b></td>';
+									echo '<td><a href="p_up_padd.php"><b>Change</b></td>';
+								echo "</tr>";
 							}
 						?>
 					</tbody>
 				</table>
+			</div>
 			</div>	
 			</form>
-		</div>	
+		</div>
 	</body>
-</html>		
+</html>

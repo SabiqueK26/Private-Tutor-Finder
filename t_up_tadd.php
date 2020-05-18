@@ -8,7 +8,7 @@
 ?>
 <html>
 	<head>
-		<title>Tutors - change password</title>
+		<title>Tutors - change address</title>
 		<h1 class="head_txt"><b>Private Tutor Finder</b></h1>
 		<link rel="stylesheet" type="text/css" href="a_changepwdstyle.css">
 	</head>
@@ -20,25 +20,24 @@
 					<li><a href="t_homepage.php"><b>Home</b></a></li>
 					<li><a href="logout.php"><b>Log Out</b></a></li>
 				</ul>
-			<div class="cen-area">		
+			<div class="cen-area">	
 				<p>
 					UserName:
-					<input class="textbox" placeholder="Enter UserName" type="text" name="tuname" required>
+					<input class="textbox" placeholder="Enter Your UserName" type="text" name="tuname" required>
+				</p>
+			
+				<p>
+					Address:
+					<input class="textbox" placeholder="Enter New Address" type="text" name="tadd" required>
+				</p>
+				
+				<p>
+					Password:
+					<input class="textbox" placeholder="Enter Password" type="password" name="conpass" required>
 				</p>
 				<p>
-					Old Password:
-					<input class="textbox" placeholder="Enter old Password" type="password" name="topass" required>
-				</p>
-				<p>
-					New Password:
-					<input class="textbox" placeholder="Enter new Password" type="password" name="tnpass" required>
-				</p>
-				<p>
-					Confirm Password:
-					<input class="textbox" placeholder="Enter new Password" type="password" name="contnpass" required>
-				</p>
-				<p>
-					<input type="submit" name="changepwd_t" value="Confirm Password">
+					<input type="submit" name="up_tadd" value="Update">
+					<span><a href="t_editacc.php"><b>Cancel</b></span>
 				</p>
 			</div>	
 			</form>

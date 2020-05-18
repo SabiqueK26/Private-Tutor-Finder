@@ -25,6 +25,11 @@ body
 	font-weight: bold;
 	float: left;
 }
+.signup-t p a:hover
+{
+	cursor: pointer;
+	color: red;
+}
 .head_txt 
 {
 	margin: 0;
@@ -46,6 +51,14 @@ h3
 	font-size: 25;
 	margin-bottom: 40px;
 	padding: 20px;
+}
+.signup-t p h4
+{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-weight: bold;
+	float: left;
 }
 .signup-t input[type="text"]
 {

@@ -88,15 +88,19 @@ body
 	background: grey;
 	color: black;
 }
-h1
+.head_txt 
 {
 	margin: 0;
 	padding: 0 0 20px;
-	font-family: times new roman header;
 	background: #ADFF2F;
+	position: auto;
+}
+.head_txt h1
+{
+	font-family: times new roman header;
+	color: black;
 	text-align: left;
 	font-size: 50px;
-	position: auto;
 }
 h2
 {

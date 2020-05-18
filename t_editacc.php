@@ -5,25 +5,26 @@
 		header('Location:../views/login.php');
 	}
 	require_once '../controllers/TutorsControllers.php';
-	$tutors = getAllTutors();
+	$tutors = getTutors();
 ?>
-<html>	
+<html>
 	<head>
-		<title>Admin - show all Tutors</title>
+		<title>Tutors - edit account</title>
 		<h1 class="head_txt"><b>Private Tutor Finder</b></h1>
-		<link rel="stylesheet" type="text/css" href="a_changepwdstyle.css">
+		<link rel="stylesheet" type="text/css" href="p_homepagestyle.css">
 	</head>
 	<body>
-		<div class="a_homepage">
+		<div class="t_homepage">
 			<form action="../controllers/TutorsControllers.php" method="post"> 
 			<h3>Welcome <?php echo $_SESSION['UserName']; ?></h3>
 				<ul class="nav-area">
-					<li><a href="a_homepage.php"><b>Home</b></a></li>
-					<li><a href="deletet.php"><b>DELETE USER</b></a></li>
+					<li><a href="t_homepage.php"><b>Home</b></a></li>
+					<li><a href="logout.php"><b>Log Out</b></a></li>
 				</ul>
-			<div class="plist">	
+				<div class="cen-area">
+				<div class="tlist">	
 				<table>
-					<caption>Tutors List</caption>
+					<caption>PROFILE</caption>
 					<thead>
 						<th>Name</th>
 						<th>UserName</th>
@@ -46,12 +47,22 @@
 									echo "<td>".$tutor["Address"]."</td>";
 									echo "<td>".$tutor["AcademicInstitution"]."</td>";
 								echo "</tr>";
+								echo "<tr>";
+									echo '<td>Cannot Change</td>';
+									echo '<td>Cannot Change</td>';
+									echo '<td>Cannot Change</td>';
+									echo '<td><a href="t_up_tnum.php"><b>Change</b></td>';
+									echo '<td>Cannot Change</td>';
+									echo '<td><a href="t_up_tadd.php"><b>Change</b></td>';
+									echo '<td><a href="t_up_tai.php"><b>Change</b></td>';
+								echo "</tr>";
 							}
 						?>
 					</tbody>
 				</table>
+			</div>
 			</div>	
 			</form>
-		</div>	
+		</div>
 	</body>
-</html>		
+</html>

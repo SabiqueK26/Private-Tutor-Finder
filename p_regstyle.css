@@ -9,7 +9,7 @@ body
 .signup-p
 {
 	width: 430px;
-	height: 650px;
+	height: 800px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -46,6 +46,19 @@ h3
 	font-size: 25;
 	margin-bottom: 40px;
 	padding: 20px;
+}
+.signup-p p h4
+{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-weight: bold;
+	float: left;
+}
+.signup-p p a:hover
+{
+	cursor: pointer;
+	color: red;
 }
 .signup-p input[type="text"]
 {

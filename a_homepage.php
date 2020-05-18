@@ -1,5 +1,9 @@
 <?php
 	session_start();
+	if(!isset($_SESSION['UserName']))
+	{
+		header('Location:../views/login.php');
+	}
 ?>
 <html>
 	<head>
@@ -10,10 +14,10 @@
 	<body>
 		<div class="a_homepage">
 			<form action="" method="post"> 
-			<h3>Welcome <?php echo $_SESSION['loggedinauser']; ?></h3>
+			<h3>Welcome <?php echo $_SESSION['UserName']; ?></h3>
 				<ul class="nav-area">
 					<li><a href="a_changepwd.php"><b>Change Password</b></a></li>
-					<li><a href="login.php"><b>Log Out</b></a></li>
+					<li><a href="logout.php"><b>Log Out</b></a></li>
 				</ul>
 				<ul class="cen-area">
 					<li><a href="showall_p.php"><b>Show All Parents</b></a></li>
