@@ -102,7 +102,7 @@ h3
 .tlist
 {
 	width: 800px;
-	height: 450px;
+	height: auto;
 	position: absolute;
 	top: 70%;
 	left: 50%;

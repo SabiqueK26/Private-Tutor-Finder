@@ -125,7 +125,7 @@ h3
 .plist
 {
 	width: 850px;
-	height: 450px;
+	height: auto;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	top: 70%;
