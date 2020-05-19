@@ -91,10 +91,21 @@
 		
 		$s="SELECT * FROM parents WHERE UserName = '$puname'";
 		$result=get($s);
+		$s1="SELECT * FROM parents WHERE Phone = '$pnum'";
+		$result1=get($s1);
 		if(count($result) > 0)
 		{
 			function_alert3("UserName Already Taken!");
-		}else{
+		}
+		elseif(count($result1) > 0)
+		{
+			function_alert3("This Phone Number has been used already!");
+		}
+		elseif($pnum == 0)
+		{
+			function_alert3("Phone Number cannot be 0");
+		}
+		else{
 			$query="INSERT INTO parents(id, Name, UserName, UserType, Password, Gender, Profession, Phone, Address) VALUES (NULL,'$pname','$puname','$utype','$ppass','$gender','$prof',$pnum,'$padd')";
 			execute($query);
 			function_alert("Registration Successful!");	

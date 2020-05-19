@@ -88,10 +88,27 @@
 		
 		$s="SELECT * FROM tutors WHERE UserName='$tuname'";
 		$result=get($s);
+		$s1="SELECT * FROM tutors WHERE Phone='$tnum'";
+		$result1=get($s1);
+		$s2="SELECT * FROM tutors WHERE Email='$email'";
+		$result2=get($s2);
 		if(count($result) > 0)
 		{
 			function_alert3("UserName Already Taken!");
-		}else{
+		}
+		elseif(count($result1) > 0)
+		{
+			function_alert3("This Phone Number has been used already!");
+		}
+		elseif(count($result2) > 0)
+		{
+			function_alert3("This Email has been used already!");
+		}
+		elseif($tnum == 0)
+		{
+			function_alert3("Phone Number cannot be 0");
+		}
+		else{
 			$query="INSERT INTO tutors(id, Name, UserName, UserType, Password, Gender, Phone, Email, Address, AcademicInstitution) VALUES (NULL,'$tname','$tuname','$utype','$tpass','$gender','$tnum','$email','$tadd','$tai')";
 			execute($query);
 			function_alert1("Registration Successful!");
